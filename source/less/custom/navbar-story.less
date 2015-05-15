@@ -1,0 +1,33 @@
+
+#navbar-story {
+	z-index:1;
+	background-color:#333;
+	margin-top:-60px;
+	.box-shadow( inset 0 0 50px rgba(0,0,0,1));
+	.story-item, a.story-item {
+		background-color:#000;
+		height: 60px;
+		&.tall {
+			height:auto;
+			.story-item-background {
+				height:auto;
+			}
+			.story-item-container {
+				height:auto;
+				.story-item-content {
+					p {
+						display:block;
+						
+					}
+				}
+			}
+		}
+		.story-item-background, .story-item-container  {
+			
+			height: 60px;
+		}
+		
+	}
+}
+
+

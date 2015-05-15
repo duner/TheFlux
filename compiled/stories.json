@@ -1,0 +1,65 @@
+{
+	"stories": [
+		{
+			"url": 		"stories/cattleranchers.html",
+			"headline": "The Flux",
+			"deck": 	"Ranchers speak out on misperceptions about over-use of antibiotics in cattle.",
+			"byline": 	"Photographs by ELISSA NADWORNY",
+			"large": 	"true",
+			"main": 	"true",
+			"background": {			
+				"url": 	"img/teaser/story1.jpg"
+			}
+		},
+		{
+			"url": 		"stories/cattleranchers.html",
+			"headline": "The New Lost Tribe",
+			"deck": 	"Chicago’s (surprisingly large) American Indian population is tired of feeling invisible.",
+			"byline": 	"by John Doe",
+			"large": 	"true",
+			"background": {			
+				"url": 	"img/teaser/story1.jpg"
+			}
+		},
+		{
+			"url": 		"stories/lashonda.html",
+			"headline": "Stacked Potential",
+			"deck": 	"Vendors of nootropics promise that the drugs will sharpen your mind and unlock your true cognitive potential. And though few studies have demonstrated the drugs’ efficacy, believers from Reddit and beyond are singing their praises. Are the drugs truly a safe smart drug, or nothing more than snake oil?",
+			"byline": 	"by John Doe",
+			"large": 	"true",
+			"background": {			
+				"url": 	"img/teaser/story2.jpg"
+			}
+		},
+		{
+			"url": 		"stories/farm.html",
+			"headline": "The Poz Perception",
+			"deck": 	"HIV infection rates in men has stagnated, but what it means to have and be aware of the disease has changed. Two characters from Chicago's most infected populations explain the role HIV plays in their lives and how it has transitioned in the gay male community.",
+			"byline": 	"by John Doe",
+			"large": 	"true",
+			"background": {			
+				"url": 	"img/teaser/story3.jpg"
+			}
+		},
+		{
+			"url": 		"stories/jackie.html",
+			"headline": "The Evolution of Labor",
+			"deck": 	"The landscape for labor is changing. How will people react to Gov. Rauner's second attempt to change the Illinois labor laws?",
+			"byline": 	"by John Doe",
+			"large": 	"true",
+			"background": {			
+				"url": 	"img/teaser/story4.jpg"
+			}
+		},
+		{
+			"url": 		"stories/jackie.html",
+			"headline": "Finding Closure",
+			"deck": 	"When the housing bubble burst, creeping gentrification stalled in Chicago's Albany Park. But as the recovery gains momentum, residents are again seeing rents rise and eviction notices posted to their doors. With the neighborhood on the edge, families, community organizations and individual citizens are fighting (legally and illegally) to turn the transition in their favor.",
+			"byline": 	"by John Doe",
+			"large": 	"true",
+			"background": {			
+				"url": 	"img/teaser/story5.jpg"
+			}
+		}
+	]
+}

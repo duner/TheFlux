@@ -28,7 +28,8 @@ html(lang="en")
 	body
 		
 		// NAVBAR
-		include includes/navbar
+		//include includes/navbar
+		+navbar(false)
 
 		// STORY COVER
 		section#story-cover.story-cover
@@ -136,6 +137,8 @@ html(lang="en")
 		
 		// Footer
 		footer
+			div#footer-storybar.storybar(role="navigation")
+				div.row
 			div.container
 				p(style="text-align:center;") 
 					| &copy; 2015 Northwestern University Medill School of Journalism 

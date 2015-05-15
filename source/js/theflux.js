@@ -36,10 +36,17 @@ $(document).ready(function(){
 		_story_nav_active = false,
 		_has_story_cover = false,
 		_story_cover_height = 100,
-		_path = "../",
+		_path = "",
 		_is_index = false;
 		
-
+		
+	if (typeof path != "undefined") {
+		_path = path;
+	}
+	if (typeof is_index != "undefined") {
+		_is_index = is_index;
+	}
+	
 	/*	Smooth Scroll
 	================================================== */
 	$('a').smoothScroll({
@@ -107,6 +114,8 @@ $(document).ready(function(){
 		navbarToggle(true);
 	};
 	
+	/*	NavBar Toggle
+	================================================== */
 	function navbarToggle(show) {
 		var animate_props = {
 			
@@ -181,7 +190,6 @@ $(document).ready(function(){
 		
 	}
 	
-	makeImagesZoomable();
 	
 	function navbarChange(in_article) {
 		var animate_props = {
@@ -228,6 +236,217 @@ $(document).ready(function(){
 		
 	}
 	
+	/*	STORY NAV BAR
+	================================================== */
+	function loadStoryBarStories(json_url, storybar_id) {
+		//$( "#navbar-story" ).html( the_title );
+		$.getJSON( json_url, function(d) {
+			var number_of_stories = d.stories.length,
+				column_width,
+				story_container = $( storybar_id + " .row" ).first(),
+				story_container_height,
+				many_stories = false,
+				stories = {
+					small: [],
+					large: [],
+				}
+				
+			column_width = 12/number_of_stories;
+			
+			if (column_width < 2) {
+				many_stories = true;
+				column_width = 2;
+			} else {
+				column_width = Math.floor(column_width);
+			}
+			
+			
+			// Create elements
+			if (many_stories) {
+				var small_stories_element,
+					storybar_small_height,
+					storybar_large_height;
+				
+				
+				for (var i = 0; i < d.stories.length; i++) {
+					var story 		= d.stories[i];
+				
+					if (story.large == "true") {
+						stories.large.push(story);
+					} else {
+						stories.small.push(story);
+					}
+				};
+				
+				if (stories.small.length > 4) {
+					small_stories_element = createEl("div", "col-sm-4 small-column");
+				} else {
+					small_stories_element = createEl("div", "col-sm-4 small-column");
+				}
+				
+				$(story_container).append(small_stories_element);
+				
+				column_width = 8 / (stories.large.length);
+				
+				if (column_width < 2) {
+					column_width = 2;
+				} else {
+					column_width = Math.floor(column_width);
+				}
+				
+				// LARGE
+				var large_rows = 1;
+				var large_column_count = 0;
+				for (var j = 0; j < stories.large.length; j++) {
+					var story 		= stories.large[j],
+						story_el;
+						
+					if (large_column_count < 4) {
+						large_column_count ++;
+					} else {
+						large_column_count = 0;
+						large_rows ++;
+					}
+						
+					story_el = createStoryNavElement(story, column_width, true);
+					$(story_container).append(story_el);
+					
+				}
+
+				// SMALL
+				var small_rows = 1;
+				var small_column_count = 0;
+				
+				for (var k = 0; k < stories.small.length; k++) {
+					var story 		= stories.small[k],
+						story_el;
+					
+					if (small_column_count < 2) {
+						small_column_count ++;
+					} else {
+						small_column_count = 0;
+						small_rows ++;
+					}
+					
+					story_el = createStoryNavElement(story, 6, false);
+					$(small_stories_element).append(story_el);
+				}
+				
+				// SIZE
+				story_container_height = $(story_container).height();
+				
+				if (story_container_height < 250) {
+					story_container_height = 250;
+				}
+				
+				storybar_small_height = story_container_height / small_rows;
+				$( small_stories_element).find( ".story-item" ).height(storybar_small_height);
+				$( small_stories_element).find( ".story-item-container" ).height(storybar_small_height);
+				$( small_stories_element).find( ".story-item-background" ).height(storybar_small_height);
+				
+				story_container_height = $(story_container).height();
+				
+				if (story_container_height < 250) {
+					story_container_height = 250;
+				}
+				
+				storybar_large_height = story_container_height / large_rows;
+				$( story_container).find( ".story-item.tall" ).height(storybar_large_height);
+				$( story_container).find( ".story-item.tall .story-item-container" ).height(storybar_large_height);
+				$( story_container).find( ".story-item.tall .story-item-background" ).height(storybar_large_height);
+				
+				
+				
+				
+			} else {
+				for (var i = 0; i < d.stories.length; i++) {
+					var story 		= d.stories[i],
+						story_el;
+				
+					story_el = createStoryNavElement(story, column_width, true);
+					$(story_container).append(story_el);
+				
+				};
+				storybar_large_height = 250;
+				$( story_container).find( ".story-item.tall" ).height(storybar_large_height);
+				$( story_container).find( ".story-item.tall .story-item-container" ).height(storybar_large_height);
+				$( story_container).find( ".story-item.tall .story-item-background" ).height(storybar_large_height);
+				
+			}
+			
+			if (!_story_nav_active) {
+				showNavbarStories(false, _speed*2);
+			}
+		});
+	}
+	
+	function createStoryNavElement(story, column_width, tall) {
+		var story_el	= "";
+		
+		story_el 		+=  "<div class='col-sm-" + column_width + " col-xs-" + column_width + "'>";
+		story_el 		+=		"<div class='row'>";
+		story_el 		+= 			"<div class='col-sm-12'>";
+		if (tall) {
+			story_el 	+= 				"<a class='story-item tall' href='" + _path + story.url + "'>";
+		} else {
+			story_el 	+= 				"<a class='story-item' href='" + _path + story.url + "'>";
+		}
+		story_el 		+= 					"<div class='story-item-background' style='background-image:url(" + _path + story.background.url + ")'></div>";
+		story_el 		+= 					"<div class='story-item-container'>";
+		story_el 		+= 						"<div class='story-item-content'>";
+		story_el 		+= 							"<h3>" + story.headline + "</h3>";
+		story_el 		+= 							"<p>" + story.deck + "</p>";
+		story_el 		+= 							"<p class='byline'>" + story.byline + "</p>";
+		
+		story_el 		+= 						"</div>";
+		story_el 		+= 					"</div>";
+		story_el 		+= 				"</a>";
+		story_el 		+= 			"</div>";
+		story_el 		+= 		"</div>";
+		story_el 		+= "</div>";
+		
+		return story_el;
+		
+	}
+	
+	function showNavbarStories(show, speed) {
+		var nav_speed = _speed;
+		if (speed) {
+			nav_speed = speed;
+		}
+		if (show) {
+			
+			$("#navbar-story").animate({
+			  marginTop:"0px"
+			}, nav_speed, "easeInOutCubic");
+			_story_nav_active = true;
+		} else {
+			$("#navbar-story").animate({
+			  marginTop:-$("#navbar-story").height()-4//"-254px"
+			}, nav_speed, "easeInOutCubic");
+			_story_nav_active = false;
+		}
+	}
+	
+	/*	NAVIGATION NAVBAR STORIES
+	================================================== */
+	$('#stories-btn').click(function() {
+		event.preventDefault();
+		if (_story_nav_active) {
+			showNavbarStories();
+			$(this).removeClass("open");
+		} else {
+			showNavbarStories(true);
+			$(this).addClass("open");
+		}
+		
+	});
+	
+ 	/*	Init
+ 	================================================== */
+	loadStoryBarStories(_path + "stories.json", "#navbar-story");
+	loadStoryBarStories(_path + "stories.json", "#footer-storybar");
+	makeImagesZoomable();
 });
 
 /* Trace (console.log)

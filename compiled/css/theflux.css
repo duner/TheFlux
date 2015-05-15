@@ -6062,6 +6062,50 @@ figure img.ll-notloaded {
 .full-width .carousel .credit {
   margin-right: 20px;
 }
+/*
+header.navigation {
+	font-family: "Apres RE","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	
+	&.navbar-fixed-top {
+		position:fixed;
+		top:0;
+		margin-top:0;
+		//.box-shadow(none);
+		//border-bottom: 1px solid #CCC;
+		//background-color:rgba(255,255,255,0.9);
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-family: "Apres RE","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-weight:normal;
+	}
+	
+	.navbar-knightlab, .navbar-product, .navbar-story {
+		margin-bottom:0;
+		border:0;
+	}
+	
+	// NAVBAR KNIGHTLAB
+	.navbar-knightlab {
+		img.logo {
+			height:50px;
+		}
+	}
+	.divider-vertical {
+		height: 30px;
+		//margin: 0 9px;
+		margin-right:1px;
+		margin-top:12px;
+		border-right: 1px solid #FFF;
+		border-left: 1px solid #CCC;
+	}
+	
+	
+
+}
+*/
 header.navigation {
   font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -6276,16 +6320,25 @@ header.navigation .divider-vertical {
 .navbar.navbar-default {
   background-color: transparent;
 }
-.navbar.navbar-default .navbar-brand {
+.navbar.navbar-default .navbar-brand,
+.navbar.navbar-default #navbar-title {
   color: #FFF;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+  z-index: 5;
+  font-size: 24px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+}
+.navbar.navbar-default .dropdown.open .navbar-brand,
+.navbar.navbar-default .dropdown.open #navbar-title {
+  color: #333;
+  text-shadow: none;
 }
 .navbar.navbar-default .navbar-nav {
   margin-right: 25px;
 }
 .navbar.navbar-default .navbar-nav > li > a {
   color: #FFF;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin-top: 25px;
 }
 .navbar.navbar-default .navbar-nav > li.active > a {
   color: #666666;
@@ -6330,31 +6383,280 @@ header.navigation .divider-vertical {
 .navbar.navbar-fixed-top {
   z-index: 999 !important;
 }
-.navbar.in-article {
+header.navigation #navbar-product {
+  z-index: 20;
+  border-radius: 0;
+  border: 0;
+  position: static;
+  top: 0;
+  margin: 0;
+  border-bottom: 1px solid transparent;
+}
+header.navigation #navbar-product .container-fluid {
+  position: relative;
+}
+header.navigation #navbar-product.in-article {
   background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid #CCC;
 }
-.navbar.in-article .navbar-brand {
-  color: #666666;
-}
-.navbar.in-article .navbar-nav {
+header.navigation #navbar-product.in-article .navbar .navbar-nav {
   margin-right: 0;
 }
-.navbar.in-article .navbar-nav > li > a {
+header.navigation #navbar-product.in-article .navbar .navbar-nav > li > a {
   color: #666666;
   background-color: transparent;
   margin-top: 0;
 }
-.navbar.in-article .navbar-nav > li.active > a {
+header.navigation #navbar-product.in-article .navbar .navbar-nav > li.active > a {
   color: #FFF;
   background-color: #666666;
 }
-.navbar.in-article a.navbar-brand img {
+header.navigation #navbar-product.in-article .navbar a.navbar-brand {
+  color: #333;
+}
+header.navigation #navbar-product.in-article .navbar a.navbar-brand img {
   width: 36px;
   height: 36px;
 }
-.navbar.in-article .navbar-toggle .icon-bar {
+header.navigation #navbar-product.in-article .navbar .navbar-toggle .icon-bar {
   background-color: #333;
+}
+header.navigation #navbar-product.in-article .navbar-brand,
+header.navigation #navbar-product.in-article #navbar-title {
+  color: #444;
+  text-shadow: none;
+}
+header.navigation #navbar-product.in-article .navbar-brand-knightlab {
+  color: #999;
+}
+header.navigation #navbar-product.in-article #stories-btn {
+  color: #999;
+}
+header.navigation #navbar-product.in-article #stories-btn:hover {
+  color: #000;
+}
+header.navigation #navbar-product.in-article #navbar-title {
+  color: #000;
+}
+header.navigation #navbar-product.in-article.no-cover {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+header.navigation #navbar-product.in-article.no-cover #navbar-title {
+  display: block;
+  color: #000;
+}
+header.navigation #navbar-product.in-article.no-cover .navbar-brand-knightlab {
+  color: #999;
+}
+header.navigation #navbar-product.in-article #navbar-title,
+header.navigation #navbar-product.in-article .divider-vertical {
+  display: block;
+}
+header.navigation #navbar-product.in-article li a {
+  color: #777777;
+}
+header.navigation #navbar-product.in-article .navbar-nav > li > a.knightlab-logo {
+  padding: 0;
+  padding-top: 5px;
+}
+header.navigation #navbar-product.in-article .knightlab-logo img {
+  height: 40px;
+  margin-right: 10px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  border: 0;
+}
+header.navigation #navbar-product.in-article .knightlab-logo b.caret {
+  display: inline-block;
+}
+header.navigation #navbar-product.no-cover {
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-transition: all 0.30s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: initial;
+}
+header.navigation #navbar-product.no-cover .navbar-brand-knightlab,
+header.navigation #navbar-product.no-cover #navbar-title {
+  color: #444;
+  text-shadow: none;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
+}
+header.navigation #navbar-product.no-cover #navbar-title,
+header.navigation #navbar-product.no-cover .divider-vertical {
+  display: block;
+}
+header.navigation #navbar-product.no-cover #navbar-title {
+  display: none;
+}
+header.navigation #navbar-product.no-cover li a {
+  color: #777777;
+}
+header.navigation #navbar-product #stories-btn {
+  z-index: 5;
+  color: #FFF;
+}
+header.navigation #navbar-product #stories-btn.btn {
+  background-color: transparent;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 8px;
+  border-color: #CCC;
+  color: #FFF;
+}
+header.navigation #navbar-product #stories-btn:hover {
+  color: #DDD;
+}
+header.navigation #navbar-product #stories-btn.open {
+  background-color: #000;
+  border: 1px solid #999;
+  border-top: 0;
+  color: #FFF;
+}
+header.navigation #navbar-product #stories-btn.open:hover {
+  color: #CCC;
+}
+header.navigation #navbar-product #stories-btn .icon-stack {
+  padding-top: 5px;
+}
+header.navigation #navbar-product .knightlab-logo img {
+  height: 76px;
+  margin-right: 0px;
+}
+header.navigation #navbar-product .knightlab-logo b.caret {
+  display: none;
+}
+header.navigation #navbar-product .divider-vertical {
+  display: none;
+}
+header.navigation #navbar-product #navbar-title {
+  font-size: 16px;
+  display: none;
+  text-align: center;
+  width: 100%;
+  float: none;
+  position: absolute;
+  top: 0;
+  padding-top: 15px;
+  padding-bottom: 11.5px;
+  z-index: 0;
+}
+header.navigation #navbar-product #navbar-title small {
+  color: #999;
+  margin-left: 5px;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  header.navigation #navbar-product #title-bar-title small {
+    display: none!important;
+  }
+}
+@media (min-width: 768px) {
+  header.navigation #navbar-product #title-bar-title {
+    margin-left: -15px;
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+  }
+}
+header.navigation #navbar-product .btn,
+header.navigation #navbar-product a.btn {
+  font-size: 14px;
+}
+header.navigation #navbar-product .btn.btn-default,
+header.navigation #navbar-product a.btn.btn-default {
+  color: #333333;
+}
+header.navigation #navbar-product .navbar-header {
+  float: none;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+header.navigation #navbar-product .navbar-header .navbar-brand {
+  float: none;
+}
+header.navigation #navbar-product ul.nav.navbar-nav li.active a {
+  background-color: #CCC;
+}
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu a.btn-success,
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .btn-success {
+  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu a.btn-success:hover,
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .btn-success:hover,
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu a.btn-success:focus,
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .btn-success:focus,
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu a.btn-success:active,
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .btn-success:active,
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu a.btn-success.active,
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .btn-success.active,
+.open .dropdown-toggleheader.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu a.btn-success,
+.open .dropdown-toggleheader.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .btn-success {
+  background-color: #47a447;
+  border-color: #398339;
+}
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu a.btn-success {
+  color: #fff;
+}
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .about-knightlab {
+  margin: 20px;
+}
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .about-knightlab ul li,
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .about-knightlab p {
+  font-size: 14px;
+}
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .about-knightlab p {
+  font-size: 14px;
+}
+header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .about-knightlab h3 {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 0;
+}
+#navbar-story {
+  z-index: 1;
+  background-color: #333;
+  margin-top: -60px;
+  -webkit-box-shadow: inset 0 0 50px #000000;
+  box-shadow: inset 0 0 50px #000000;
+}
+#navbar-story .story-item,
+#navbar-story a.story-item {
+  background-color: #000;
+  height: 60px;
+}
+#navbar-story .story-item.tall,
+#navbar-story a.story-item.tall {
+  height: auto;
+}
+#navbar-story .story-item.tall .story-item-background,
+#navbar-story a.story-item.tall .story-item-background {
+  height: auto;
+}
+#navbar-story .story-item.tall .story-item-container,
+#navbar-story a.story-item.tall .story-item-container {
+  height: auto;
+}
+#navbar-story .story-item.tall .story-item-container .story-item-content p,
+#navbar-story a.story-item.tall .story-item-container .story-item-content p {
+  display: block;
+}
+#navbar-story .story-item .story-item-background,
+#navbar-story a.story-item .story-item-background,
+#navbar-story .story-item .story-item-container,
+#navbar-story a.story-item .story-item-container {
+  height: 60px;
 }
 .story-cover {
   width: 100%;
