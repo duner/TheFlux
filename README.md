@@ -71,6 +71,25 @@ Use the following example as a way to create responsive embeds
 	<cite>John Doe</cite>
 </blockquote>
 ```
+Or use `blockquotes` with color
+```html
+<section class="container-fluid blockquote-color">
+	<div class="row">
+		<div class="col-md-12">
+			<blockquote>
+				<div class="col-md-2"></div>
+				<div class="col-md-2">
+					<img src="img/talking_head_01.jpg" data-src="img/talking_head_01.jpg" class="img-responsive img-circle ll-init ll-loaded" style="opacity: 1;">
+				</div>
+				<div class="col-md-6">
+					<p>We strongly agree that messages that have been out there have been overblown.</p>
+					<cite>John Doe</cite>
+				</div>
+			</blockquote>
+		</div>
+	</div>
+</section>
+```
 
 ###Lead Paragraphs
 ```html

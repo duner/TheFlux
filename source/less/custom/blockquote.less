@@ -7,6 +7,9 @@ blockquote {
 	margin: 20px 0px 20px 0px;
 	border:0;
 	color:@gray-darker;
+	
+	
+	
 	p {
 		//text-align:center;
 		margin:0;
@@ -28,5 +31,31 @@ blockquote {
 		display:block;
 		font-size: 12px;
 		text-align:right;
+	}
+}
+
+.blockquote-color {
+	background-color:@brand-primary;
+	padding-top:25px;
+	padding-bottom:25px;
+	margin-top:25px;
+	margin-bottom:25px;
+	
+	blockquote {
+		color:@body-bg;
+		
+		p {
+			&:before {
+				content:"“";
+				color:@body-bg;
+			}
+			&:after {
+				content:"”";
+				color:@body-bg;
+			}
+		}
+		cite {
+			color:darken(@body-bg,10);
+		}
 	}
 }

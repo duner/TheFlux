@@ -5889,6 +5889,27 @@ blockquote cite:before {
   content: "— ";
   color: #bbbbbb;
 }
+.blockquote-color {
+  background-color: #2196f3;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.blockquote-color blockquote {
+  color: #ffffff;
+}
+.blockquote-color blockquote p:before {
+  content: "“";
+  color: #ffffff;
+}
+.blockquote-color blockquote p:after {
+  content: "”";
+  color: #ffffff;
+}
+.blockquote-color blockquote cite {
+  color: #e6e6e6;
+}
 figure {
   margin-top: 50px;
   margin-bottom: 50px;
