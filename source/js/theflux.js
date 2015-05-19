@@ -46,7 +46,7 @@ $(document).ready(function(){
 	if (typeof is_index != "undefined") {
 		_is_index = is_index;
 	}
-	
+
 	// TITLE
 	var the_title = $("h1").html();
 	$( "#navbar-title" ).html( the_title );
