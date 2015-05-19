@@ -1,0 +1,21 @@
+	@font-face {
+  font-family: 'Fakt Condensed';
+  src: url('/imagesrv/fonts/faktconpro-blond-webfont.eot');
+  src: url('/imagesrv/fonts/faktconpro-blond-webfont.eot?#iefix') format('embedded-opentype'), url('/imagesrv/fonts/faktconpro-blond-webfont.woff') format('woff'), url('/imagesrv/fonts/faktconpro-blond-webfont.ttf') format('truetype'), url('/imagesrv/fonts/faktconpro-blond-webfont.svg#fakt_con_pro_bndregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fakt Condensed Medium';
+  src: url('/imagesrv/fonts/faktconpro-medium-webfont.eot');
+  src: url('/imagesrv/fonts/faktconpro-medium-webfont.eot?#iefix') format('embedded-opentype'), url('/imagesrv/fonts/faktconpro-medium-webfont.woff') format('woff'), url('/imagesrv/fonts/faktconpro-medium-webfont.ttf') format('truetype'), url('/imagesrv/fonts/faktconpro-medium-webfont.svg#fakt_con_pro_medregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fakt Condensed Bold';
+  src: url('/imagesrv/fonts/faktconpro-bold-webfont.eot');
+  src: url('/imagesrv/fonts/faktconpro-bold-webfont.eot?#iefix') format('embedded-opentype'), url('/imagesrv/fonts/faktconpro-bold-webfont.woff') format('woff'), url('/imagesrv/fonts/faktconpro-bold-webfont.ttf') format('truetype'), url('/imagesrv/fonts/faktconpro-bold-webfont.svg#fakt_con_pro_bdbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
