@@ -47,6 +47,10 @@ $(document).ready(function(){
 		_is_index = is_index;
 	}
 	
+	// TITLE
+	var the_title = $("h1").html();
+	$( "#navbar-title" ).html( the_title );
+	
 	/*	Smooth Scroll
 	================================================== */
 	$('a').smoothScroll({
@@ -203,6 +207,7 @@ $(document).ready(function(){
 			animate_props.marginTop = "-56px";
 		}
 		
+		/*
 		$("#navbar").animate(animate_props, _speed/2, "easeInOutCubic", function() {
 			
 			if (in_article) {
@@ -226,6 +231,44 @@ $(document).ready(function(){
 				$('#navbar').css('opacity', '0');
 				$('#navbar').css('marginTop', '0');
 				$("#navbar").animate({
+					opacity:"1"
+				}, _speed*2, "easeInOutCubic");
+			}
+			
+
+  
+		});
+		*/
+		$("#navbar-product").animate(animate_props, _speed/2, "easeInOutCubic", function() {
+			
+			if (in_article) {
+				$('#product-navbar-collapse').css('opacity', '1');
+				
+				$('.navbar-brand img').css('width', '32px');
+				$('.navbar-brand img').css('height', '32px');
+				
+				$('#navbar-product').addClass('in-article');
+				$('#navbar-product').css('marginTop', '-56px');
+				$("#navbar-product").animate({
+					marginTop:"0px",
+					opacity:"1"
+				}, _speed, "easeInOutCubic");
+			} else {
+				if (_is_index) {
+					$('#product-navbar-collapse').css('opacity', '0');
+				} else {
+					$('#product-navbar-collapse').css('opacity', '1');
+				}
+				//$('img.knightlab-logo').attr('src', '../css/kngihtlab-logo-NOtagline.png');
+				//$('.knightlab-logo img').attr('src', '../css/knightlab-logo-diamond-190.png');
+				
+				$('.navbar-brand img').css('width', '');
+				$('.navbar-brand img').css('height', '');
+				
+				$('#navbar-product').removeClass('in-article');
+				$('#navbar-product').css('opacity', '0');
+				$('#navbar-product').css('marginTop', '0');
+				$("#navbar-product").animate({
 					opacity:"1"
 				}, _speed*2, "easeInOutCubic");
 			}
