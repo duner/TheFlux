@@ -1,0 +1,476 @@
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Starter Kit for Bootstrap"/>
+    <meta name="author" content="Zach Wise"/>
+    <meta name="keywords" content="Template, Bootstrap"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <title>Project</title>
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/theflux.css?v10"/>
+    <!-- HTML5 shim, for IE6-8 support of HTML elements-->
+    <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+    
+    -->
+    <!-- Icon-->
+    <link rel="shortcut icon" href="img/ico/favicon.png"/>
+    <link rel="apple-touch-icon-precomposed" href="img/ico/favicon.png"/>
+    <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-144.png" sizes="144x144"/>
+    <!-- Fonts-->
+    <!-- To test fonts import them below and set them in the style tag-->
+    <!--link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic')-->
+    <!--link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic')-->
+    <style>
+      //
+      	body {
+      		font-family: 'Libre Baskerville', serif;
+      		font-weight:400;
+      	}
+      	blockquote, blockquote p {
+      		font-family: 'Source Sans Pro', sans-serif;
+      		font-weight:400;
+      		font-style: italic;
+      	}
+      	blockquote cite {
+      		font-family: 'Source Sans Pro', sans-serif;
+      		font-weight:400;
+      		font-style: normal;
+      	}
+      	h1, h2, h3, h4, h5, h6 {
+      		font-family: 'Source Sans Pro', sans-serif;
+      		font-weight:900;
+      	}
+      	h1 {
+      		font-weight:900;
+      		font-size: 60px;
+      		line-height: 60px;
+      	}
+      	p.lead {
+      		font-family: 'Libre Baskerville', serif;
+      		font-weight:300;
+      	}
+      	.btn {
+      		font-family: 'Source Sans Pro', sans-serif;
+      		font-weight:400;
+      	}
+      	b, strong {
+      		font-weight:700;
+      	}
+      	i, cite, em, var, address, dfn {
+      		font-weight:300;
+      		font-style: italic;
+      	}
+      	pre code {
+      		font-size:12px;
+      	}
+      	pre {
+      		margin-top: -16px;
+      		margin-right: 0;
+      		margin-left: 0;
+      		border-width: 1px;
+      		border-bottom-right-radius: 4px;
+      		border-bottom-left-radius: 4px;
+      	    padding: 9px 14px;
+      	    background-color: #f7f7f9;
+      	    border: 1px solid #e1e1e8;
+      	}
+      
+      
+    </style>
+  </head>
+  <body>
+    <article class="lazyload">
+      <section class="container-fluid bs-example-section">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <h1>Typography</h1>
+            <p>To test out font faces, add them to the head of this document and change the <code>&lt;style&gt;</code> tag.</p>
+            <p>
+              <pre><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://fonts.googleapis.com/css?family=Lora:400,700,400italic&quot;/&gt; 
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://fonts.googleapis.com/css?family=Patua+One&quot;/&gt; 
+&lt;style&gt; 
+	body { 
+		font-family: 'Lora', serif; 
+		font-weight:400;
+	} 
+	blockquote, blockquote p {
+		font-family: 'Lora', serif; font-weight:100; font-style: italic;
+	} 
+	blockquote cite {
+		font-family: 'Lora', serif; font-weight:400; font-style: normal;
+	} 
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Patua One', cursive; font-weight:400;
+	} 
+&lt;/style&gt;
+</code></pre>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid bs-example-section">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <h2 class="bs-section-title">Headings</h2>
+            <p>All HTML headings, h1 through h6, are available. .h1 through .h6 classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.</p>
+            <div class="bs-example">
+              <h1>h1. Heading</h1>
+              <h2>h2. Heading</h2>
+              <h3>h3. Heading</h3>
+              <h4>h4. Heading</h4>
+              <h5>h5. Heading</h5>
+              <h6>h6. Heading</h6>
+            </div>
+            <p>Create lighter, secondary text in any heading with a generic <code>&lt;small&gt;</code> tag or the .small class.</p>
+            <div class="bs-example">
+              <h1>h1. Heading <small>Secondary text</small></h1>
+              <h2>h2. Heading <small>Secondary text</small></h2>
+              <h3>h3. Heading <small>Secondary text</small></h3>
+              <h4>h4. Heading <small>Secondary text</small></h4>
+              <h5>h5. Heading <small>Secondary text</small></h5>
+              <h6>h6. Heading <small>Secondary text</small></h6>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid bs-example-section">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <h2 class="bs-section-title">Body copy</h2>
+            <p>Basic paragraph</p>
+            <div class="bs-example">
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. </p>
+              <p>Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna.</p>
+              <p>Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Ut vitae enim eu est vehicula gravida. Morbi ipsum ipsum, porta nec, tempor id, auctor vitae, purus. Pellentesque neque. Nulla luctus erat vitae libero. Integer nec enim. Phasellus aliquam enim et tortor. Quisque aliquet, quam elementum condimentum feugiat, tellus odio consectetuer wisi, vel nonummy sem neque in elit. Curabitur eleifend wisi iaculis ipsum. </p>
+            </div>
+            <h2 class="bs-section-title">Lead body copy</h2>
+            <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+            <div class="bs-example">
+              <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. </p>
+              <p>Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna.</p>
+              <p>Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Ut vitae enim eu est vehicula gravida. Morbi ipsum ipsum, porta nec, tempor id, auctor vitae, purus. Pellentesque neque. Nulla luctus erat vitae libero. Integer nec enim. Phasellus aliquam enim et tortor. Quisque aliquet, quam elementum condimentum feugiat, tellus odio consectetuer wisi, vel nonummy sem neque in elit. Curabitur eleifend wisi iaculis ipsum. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid bs-example-section">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <h2 class="bs-section-title">Blockquotes</h2>
+            <p>Wrap <code>&lt;blockquote&gt;</code> around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote. For quotes, use a <code>&lt;p&gt;</code> and for source use a <code>&lt;cite&gt;</code>.</p>
+            <div class="bs-example">
+              <blockquote>
+                <p>We strongly agree that messages that have been out there have been overblown.</p>
+                <cite>John Doe</cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid bs-example-section">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <h2 class="bs-section-title">Inline text elements</h2>
+            <h3>Marked text</h3>
+            <p>For highlighting a run of text due to its relevance in another context, use the <code>&lt;mark&gt;</code> tag.</p>
+            <div class="bs-example">
+              <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+            </div>
+            <h3>Small text</h3>
+            <p>For de-emphasizing inline or blocks of text</p>
+            <div class="bs-example">
+              <p>This is normal paragraph text.</p><small>This line of text is meant to be treated as fine print.</small>
+              <p>This is normal paragraph text.</p>
+            </div>
+            <h3>Bold <small>strong</small></h3>
+            <p>For emphasizing a snippet of text with a heavier font-weight.</p>
+            <div class="bs-example">
+              <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+            </div>
+            <h3>Italics <small>emphasis</small></h3>
+            <p>For emphasizing a snippet of text with italics.</p>
+            <div class="bs-example">
+              <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid bs-example-section">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <h2 class="bs-section-title">Alignment classes</h2>
+            <p>Easily realign text to components with text alignment classes.</p>
+            <div class="bs-example">
+              <p class="text-left">Left aligned text.</p>
+              <p class="text-center">Center aligned text.</p>
+              <p class="text-right">Right aligned text.</p>
+              <p class="text-justify">Justified text.</p>
+              <p class="text-nowrap">No wrap text.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid bs-example-section">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <h2 class="bs-section-title">Lists</h2>
+            <h3>Unordered</h3>
+            <p>A list of items in which the order <em>does not</em> explicitly matter.</p>
+            <div class="bs-example">
+              <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                  <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                    <li>Vestibulum laoreet porttitor sem</li>
+                    <li>Ac tristique libero volutpat at</li>
+                  </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+              </ul>
+            </div>
+            <h3>Ordered</h3>
+            <p>A list of items in which the order <em>does</em> explicitly matter.</p>
+            <div class="bs-example">
+              <ol>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+              </ol>
+            </div>
+            <h3>Inline</h3>
+            <p>Place all list items on a single line.</p>
+            <div class="bs-example">
+              <ul class="list-inline">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+              </ul>
+            </div>
+            <h3>Description</h3>
+            <p>A list of terms with their associated descriptions.</p>
+            <div class="bs-example">
+              <dl>
+                <dt>Description lists</dt>
+                <dd>A description list is perfect for defining terms.</dd>
+                <dt>Euismod</dt>
+                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                <dt>Malesuada porta</dt>
+                <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+              </dl>
+            </div>
+            <h3>Horizontal Description </h3>
+            <p>A list of terms with their associated descriptions.</p>
+            <div class="bs-example">
+              <dl class="dl-horizontal">
+                <dt>Description lists</dt>
+                <dd>A description list is perfect for defining terms.</dd>
+                <dt>Euismod</dt>
+                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                <dt>Malesuada porta</dt>
+                <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid bs-example-section">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <h2 class="bs-section-title">Buttons</h2>
+            <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
+            <div class="bs-example"><a href="#" role="button" class="btn btn-default">Link</a>
+              <button type="submit" class="btn btn-default">Button</button>
+            </div>
+            <h3>Button options</h3>
+            <p>Use any of the available button classes to quickly create a styled button.</p>
+            <div class="bs-example"><a href="#" role="button" class="btn btn-default">Default</a> <a href="#" role="button" class="btn btn-primary">Primary</a></div>
+            <h3>Button sizes</h3>
+            <p>Fancy larger or smaller buttons? Add <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> for additional sizes.</p>
+            <div class="bs-example"><a href="#" role="button" class="btn btn-default btn-lg">Large</a> <a href="#" role="button" class="btn btn-primary btn-lg">Large</a><br/><br/><a href="#" role="button" class="btn btn-default">Default</a> <a href="#" role="button" class="btn btn-primary">Default</a><br/><br/><a href="#" role="button" class="btn btn-default btn-sm">Small</a> <a href="#" role="button" class="btn btn-primary btn-sm">Small</a><br/><br/><a href="#" role="button" class="btn btn-default btn-xs">Extra Small</a> <a href="#" role="button" class="btn btn-primary btn-xs">Extra Small</a></div>
+          </div>
+        </div>
+      </section>
+    </article>
+    <article class="lazyload">
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <figure><img src="img/transparent.gif" data-src="img/example_01.jpg" class="img-responsive"/>
+              <figcaption>Jacqueline and her mom walk through the neighborhood to run errands before their days begin. Her mom used to work for a profitable line of currency exchanges, but recently switched to a more stable finance job downtown.</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <figure><img src="img/transparent.gif" data-src="img/example_02.jpg" class="img-responsive"/>
+              <figcaption>At school, everyone knows Jacqueline as the one who takes the lead. "There need to be more outstanding leaders like her," says Diamond Montana, her biology teacher.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <p class="lead">Paragraph text with lead class. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.</p>
+            <p>Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.</p>
+            <div class="row">
+              <div class="col-md-6">
+                <blockquote>
+                  <p>We strongly agree that messages that have been out there have been overblown.</p>
+                  <cite>John Doe</cite>
+                </blockquote>
+              </div>
+              <div class="col-md-6">
+                <figure><img src="img/transparent.gif" data-src="img/example_02.jpg" class="img-responsive"/>
+                  <figcaption>At school, everyone knows Jacqueline as the one who takes the lead. "There need to be more outstanding leaders like her," says Diamond Montana, her biology teacher.</figcaption>
+                </figure>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.</p>
+            <p>Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.</p>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <p class="lead">Paragraph text with lead class. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat.		</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.</p>
+            <!-- Video Example-->
+            <figure>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://player.vimeo.com/video/19974325?color=b11623" width="100%" frameborder="0" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen" class="embed-responsive-item"></iframe>
+              </div>
+              <figcaption>Reporter Corey Kilgannon, Marcus Yam and myself chased calls over a police scanner for around 16hrs straight. What we found wasn’t what we expected.</figcaption>
+            </figure>
+            <p>Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula. Nunc molestie, nisl sit amet cursus convallis, sapien lectus pretium metus, vitae pretium enim wisi id lectus. Donec vestibulum. Etiam vel nibh. Nulla facilisi. Mauris pharetra. Donec augue. Fusce ultrices, neque id dignissim ultrices, tellus mauris dictum elit, vel lacinia enim metus eu nunc.</p>
+            <p>Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Ut vitae enim eu est vehicula gravida. Morbi ipsum ipsum, porta nec, tempor id, auctor vitae, purus. Pellentesque neque. Nulla luctus erat vitae libero. Integer nec enim. Phasellus aliquam enim et tortor. Quisque aliquet, quam elementum condimentum feugiat, tellus odio consectetuer wisi, vel nonummy sem neque in elit. Curabitur eleifend wisi iaculis ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non velit non ligula laoreet ultrices.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <figure><img src="img/transparent.gif" data-src="img/example_01.jpg" class="img-responsive"/>
+              <figcaption>Jacqueline and her mom walk through the neighborhood to run errands before their days begin. Her mom used to work for a profitable line of currency exchanges, but recently switched to a more stable finance job downtown.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <blockquote>
+              <p>We strongly agree that messages that have been out there have been overblown.</p>
+              <cite>John Doe</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.</p>
+            <p>Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula. Nunc molestie, nisl sit amet cursus convallis, sapien lectus pretium metus, vitae pretium enim wisi id lectus. Donec vestibulum. Etiam vel nibh. Nulla facilisi. Mauris pharetra. Donec augue. Fusce ultrices, neque id dignissim ultrices, tellus mauris dictum elit, vel lacinia enim metus eu nunc.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="https://player.vimeo.com/video/20027830?autoplay=1&amp;loop=1&amp;color=b11623&amp;title=0&amp;byline=0&amp;portrait=0" width="100%" frameborder="0" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen" class="embed-responsive-item"></iframe>
+        </div>
+      </section>
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.</p>
+            <p>Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula. Nunc molestie, nisl sit amet cursus convallis, sapien lectus pretium metus, vitae pretium enim wisi id lectus. Donec vestibulum. Etiam vel nibh. Nulla facilisi. Mauris pharetra. Donec augue. Fusce ultrices, neque id dignissim ultrices, tellus mauris dictum elit, vel lacinia enim metus eu nunc.</p>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid blockquote-color">
+        <div class="row">
+          <div class="col-md-12">
+            <blockquote>
+              <div class="col-md-2"></div>
+              <div class="col-md-2"><img src="img/transparent.gif" data-src="img/talking_head_01.jpg" class="img-responsive img-circle"/></div>
+              <div class="col-md-6">
+                <p>We strongly agree that messages that have been out there have been overblown.</p>
+                <cite>John Doe</cite>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <p>Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Ut vitae enim eu est vehicula gravida. Morbi ipsum ipsum, porta nec, tempor id, auctor vitae, purus. Pellentesque neque. Nulla luctus erat vitae libero. Integer nec enim. Phasellus aliquam enim et tortor. Quisque aliquet, quam elementum condimentum feugiat, tellus odio consectetuer wisi, vel nonummy sem neque in elit. Curabitur eleifend wisi iaculis ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non velit non ligula laoreet ultrices.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-5">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.</p>
+          </div>
+          <div class="col-md-3">
+            <blockquote>
+              <p>We strongly agree that messages that have been out there have been overblown.</p>
+              <cite>John Doe</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </article>
+    <!-- Footer-->
+    <footer>
+      <div class="container">
+        <p style="text-align:center;">
+           
+          &copy; 2015 Northwestern University Medill School of Journalism 
+        </p>
+      </div>
+    </footer>
+    <!-- JavaScript-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/theflux.js?v10"></script>
+  </body>
+</html>
