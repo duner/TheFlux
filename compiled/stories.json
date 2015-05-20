@@ -1,10 +1,10 @@
 {
 	"stories": [
 		{
-			"url": 		"stories/cattleranchers.html",
+			"url": 		"index.html",
 			"headline": "The Flux",
-			"deck": 	"Ranchers speak out on misperceptions about over-use of antibiotics in cattle.",
-			"byline": 	"Photographs by ELISSA NADWORNY",
+			"deck": 	"",
+			"byline": 	"",
 			"large": 	"true",
 			"main": 	"true",
 			"background": {			
@@ -12,50 +12,50 @@
 			}
 		},
 		{
-			"url": 		"stories/cattleranchers.html",
+			"url": 		"stories/new_lost_tribe/index.html",
 			"headline": "The New Lost Tribe",
 			"deck": 	"Chicago’s (surprisingly large) American Indian population is tired of feeling invisible.",
-			"byline": 	"by John Doe",
+			"byline": 	"",
 			"large": 	"true",
 			"background": {			
 				"url": 	"img/teaser/story1.jpg"
 			}
 		},
 		{
-			"url": 		"stories/lashonda.html",
+			"url": 		"stories/stacked_potential/index.html",
 			"headline": "Stacked Potential",
 			"deck": 	"Vendors of nootropics promise that the drugs will sharpen your mind and unlock your true cognitive potential. And though few studies have demonstrated the drugs’ efficacy, believers from Reddit and beyond are singing their praises. Are the drugs truly a safe smart drug, or nothing more than snake oil?",
-			"byline": 	"by John Doe",
+			"byline": 	"",
 			"large": 	"true",
 			"background": {			
 				"url": 	"img/teaser/story2.jpg"
 			}
 		},
 		{
-			"url": 		"stories/farm.html",
+			"url": 		"stories/poz_perception/index.html",
 			"headline": "The Poz Perception",
 			"deck": 	"HIV infection rates in men has stagnated, but what it means to have and be aware of the disease has changed. Two characters from Chicago's most infected populations explain the role HIV plays in their lives and how it has transitioned in the gay male community.",
-			"byline": 	"by John Doe",
+			"byline": 	"",
 			"large": 	"true",
 			"background": {			
 				"url": 	"img/teaser/story3.jpg"
 			}
 		},
 		{
-			"url": 		"stories/jackie.html",
+			"url": 		"stories/evolution_of_labor/index.html",
 			"headline": "The Evolution of Labor",
 			"deck": 	"The landscape for labor is changing. How will people react to Gov. Rauner's second attempt to change the Illinois labor laws?",
-			"byline": 	"by John Doe",
+			"byline": 	"",
 			"large": 	"true",
 			"background": {			
 				"url": 	"img/teaser/story4.jpg"
 			}
 		},
 		{
-			"url": 		"stories/jackie.html",
+			"url": 		"stories/finding_closure/index.html",
 			"headline": "Finding Closure",
 			"deck": 	"When the housing bubble burst, creeping gentrification stalled in Chicago's Albany Park. But as the recovery gains momentum, residents are again seeing rents rise and eviction notices posted to their doors. With the neighborhood on the edge, families, community organizations and individual citizens are fighting (legally and illegally) to turn the transition in their favor.",
-			"byline": 	"by John Doe",
+			"byline": 	"",
 			"large": 	"true",
 			"background": {			
 				"url": 	"img/teaser/story5.jpg"
