@@ -1,9 +1,12 @@
 # The Flux
 Implements [BootstrapStarterKit](https://github.com/Medill/BootstrapStarterKit)
 ## See it
-[See it in action here](http://medill.github.io/BootstrapStarterKit/)
+* [See it in action here](http://medill.github.io/TheFlux/)
+* [Typography Specimen Sheet](http://medill.github.io/TheFlux/typography.html)
+* [Typography Options 1](http://medill.github.io/TheFlux/typography_option_01.html)
+* [Typography Options 1](http://medill.github.io/TheFlux/typography_option_02.html)
+* [Typography Options 1](http://medill.github.io/TheFlux/typography_option_03.html)
 
-[Typography Specimen Sheet](http://medill.github.io/BootstrapStarterKit/typography.html)
 ##Included Javascript
 * [Laziest Loader Library](http://sjwilliams.github.io/laziestloader/)
 * [Fluidbox](http://terrymun.github.io/Fluidbox/)
