@@ -106,6 +106,10 @@ $(document).ready(function(){
 		
 	}
 	
+	/*	Video Laziest Loader
+	================================================== */
+	$('.lazy-video').laziestloader();
+	
 	/*	Fluidbox Events
 	================================================== */
 	function fluidboxOpen() {
