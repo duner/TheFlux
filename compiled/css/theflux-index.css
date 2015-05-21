@@ -34,7 +34,7 @@ html {
 }
 .title-panel p {
   text-align: left;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 .panels [class*="col-"] {
@@ -92,7 +92,7 @@ html {
   display: none;
   font-size: 18px;
   line-height: 20px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .story-panel a:hover {
   text-decoration: none;

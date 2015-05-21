@@ -14,6 +14,7 @@
 	// @codekit-prepend "Library/bootstrap/scrollspy.js";
 	// @codekit-prepend "Library/bootstrap/tab.js";
 	// @codekit-prepend "Library/bootstrap/tooltip.js";
+	// @codekit-prepend "Library/bootstrap/popover.js";
 	// @codekit-prepend "Library/bootstrap/carousel.js";
 	// @codekit-prepend "Library/bootstrap/collapse.js";
 	// @codekit-prepend "Library/bootstrap/modal.js";
