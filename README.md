@@ -69,9 +69,11 @@ Use the following example as a way to create responsive embeds
 ```
 or for a loopable autoplay video, use the `lazy-loader` css class.
 ```html
-<div class="embed-responsive embed-responsive-16by9">
-	<video autoplay="autoplay" loop="loop" data-pattern="video/video_example_loopable_{{size}}.mp4" data-widths="[600, 900]" class="lazy-video embed-responsive-item"></video>
-</div>
+<figure>
+	<div class="embed-responsive embed-responsive-16by9">
+		<video autoplay="autoplay" loop="loop" data-pattern="video/video_example_loopable_{{size}}.mp4" data-widths="[600, 900]" class="lazy-video embed-responsive-item"></video>
+	</div>
+</figure>
 ```
 ###Blockquotes
 ```html
