@@ -5905,6 +5905,27 @@ h1.extra-large {
 h1.extra-large small {
   font-weight: 300;
 }
+h2 {
+  margin-top: 75px;
+}
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 0;
+  border-top: medium double #CCC;
+  width: 40%;
+  text-align: center;
+}
+hr:after {
+  color: #e6e6e6;
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -1em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
+}
 span.dropcap {
   float: left;
   font-size: 50px;
@@ -5926,9 +5947,9 @@ span.dropcap {
 }
 .caption {
   text-align: left;
-  font-size: 12px;
+  font-size: 13px;
   color: #666;
-  line-height: 14px;
+  line-height: 15px;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /*	Better Underline Links
@@ -6173,9 +6194,9 @@ figure {
 }
 figure figcaption {
   text-align: left;
-  font-size: 12px;
+  font-size: 13px;
   color: #666;
-  line-height: 14px;
+  line-height: 15px;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 figure figcaption.credit {
@@ -7017,20 +7038,24 @@ header.navigation #navbar-product ul.nav.navbar-nav .dropdown-menu .about-knight
 .story-cover .story-cover-content p.lead,
 .story-cover .story-cover-content .byline,
 .story-cover .story-cover-content p {
-  width: 50%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 .story-cover .story-cover-content p.lead {
+  font-size: 40px;
+  line-height: 48px;
   color: #FFF;
   text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.9);
   margin-bottom: 5px;
   font-weight: 300;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
+  margin-bottom: 25px;
 }
 .story-cover .story-cover-content .byline {
   font-size: 22px;
+  line-height: 22px;
   color: #FFF;
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
   font-weight: 200;

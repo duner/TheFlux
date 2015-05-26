@@ -33,6 +33,31 @@ h1 {
 	}
 }
 
+h2 {
+	margin-top:75px;
+}
+
+hr {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: 0;
+	border-top: medium double #CCC;
+
+	//border-top: 1px solid #CCC;
+	width:40%;
+	
+	text-align: center;
+	&:after {
+		color:lighten(#CCC, 10);
+		content: "§";
+		display: inline-block;
+		position: relative;
+		top: -1em;
+		font-size: 1.5em;
+		padding: 0 0.25em;
+		background: white;
+	}
+}
 span.dropcap {
 	float:left;
 	font-size:50px;
