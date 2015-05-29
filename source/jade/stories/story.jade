@@ -28,7 +28,7 @@ html(lang="en")
 	body(data-spy='scroll',data-target='.subnav',data-offset='80')
 		
 		// NAVBAR
-		include ../includes/navbar
+		+navbar(true)
 
 		// STORY COVER
 		section#story-cover.story-cover
@@ -41,8 +41,13 @@ html(lang="en")
 				p.byline Photographs by Jane Doe
 
 		section.story-cover-caption
+			div.credit
+				| Zach Wise
 			div.caption
 				| Senior Jacqueline Martinez and her boyfriend share a bus ride on her second to last day of high school. The two are expecting their first child this November.
+			
+
+		//ARTICLE
 		article.lazyload
 
 			section.container-fluid
@@ -130,11 +135,15 @@ html(lang="en")
 		
 		// Footer
 		footer
+			div#footer-storybar.storybar(role="navigation")
+				div.row
 			div.container
 				p(style="text-align:center;") 
 					| &copy; 2015 Northwestern University Medill School of Journalism
 
 		// JavaScript
+		script(type='text/javascript').
+			var path = "../../";
 		script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
 		script(type='text/javascript', src='../../js/theflux.js?v10')
 		script(type='text/javascript', src='js/story.js')

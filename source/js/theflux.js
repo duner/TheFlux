@@ -38,7 +38,8 @@ $(document).ready(function(){
 		_has_story_cover = false,
 		_story_cover_height = 100,
 		_path = "",
-		_is_index = false;
+		_is_index = false,
+		profile_array = [];
 		
 		
 	if (typeof path != "undefined") {
@@ -116,11 +117,13 @@ $(document).ready(function(){
 	function fluidboxOpen() {
 		trace("open");
 		navbarToggle(false);
+		profileNavToggle(false);
 	};
 	
 	function fluidboxClose() {
 		trace("close");
 		navbarToggle(true);
+		profileNavToggle(true);
 	};
 	
 	/*	NavBar Toggle
@@ -490,11 +493,82 @@ $(document).ready(function(){
 		
 	});
 	
- 	/*	Init
+	/*	PROFILE NAVIGATION
+	================================================== */
+	$('.profile-nav').waypoint({
+		handler: function(direction) {
+		
+			if (direction == "down") {
+				$('.profile-nav').addClass('profile-nav-sticky');
+			} else if (direction == "up") {
+				$('.profile-nav').removeClass('profile-nav-sticky');
+			}
+		 
+		},
+		offset:120
+	});
+	
+	function profileNavToggle(show) {
+		var animate_props = {
+			
+		}
+		if (show) {
+			animate_props.opacity = "1";
+			animate_props.marginTop = "0";
+		} else {
+			animate_props.opacity = "1";
+			animate_props.marginTop = "-300px";
+		}
+		
+		$(".profile-nav-sticky").animate(animate_props, _speed/2, "easeInOutCubic", function() {
+			
+		});
+	}
+	
+	/*	Profile Nav Layout
+ 	================================================== */
+	
+	function profileNavLayout() {
+		profile_array = $( ".profile-nav .profile-item" ).toArray();
+		var profile_width = 100/profile_array.length;
+		
+		
+		for (var i = 0; i < profile_array.length; i++) {
+			var profile = profile_array[i];
+			profile.style.width = profile_width + "%";
+			
+		};
+		
+		$( ".profile-nav .profile-item a.profile-button" ).each(function() {
+			var waypoint_id = $(this).attr("href");
+			var this_button = $(this);
+			$(waypoint_id).waypoint({
+				handler: function(direction) {
+					trace(waypoint_id);
+					resetActiveProfiles();
+					$(this_button).addClass("profile-button-active");
+				},
+				offset:400
+			});
+				
+		});
+	}
+	
+	function resetActiveProfiles() {
+		$( ".profile-nav .profile-item a.profile-button" ).removeClass("profile-button-active");
+	}
+	
+	$('a.profile-button').smoothScroll({
+		offset: -180
+	});
+	
+	/*	Init
  	================================================== */
 	loadStoryBarStories(_path + "stories.json", "#navbar-story");
 	loadStoryBarStories(_path + "stories.json", "#footer-storybar");
 	makeImagesZoomable();
+	profileNavLayout();
+	
 });
 
 /* Trace (console.log)

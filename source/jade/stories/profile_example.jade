@@ -1,0 +1,404 @@
+include ../includes/mixins
+html(lang="en")
+	head
+		meta(charset='utf-8')
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(name='keywords', content='Transition, Journalism, Northwestern, Medill')
+		meta(name='apple-mobile-web-app-capable', content='yes')
+		meta(name='apple-touch-fullscreen', content='yes')
+
+		+meta("The Flux", "Stories On Transition", "http://graphics8.nytimes.com/images/2012/02/19/us/19whitney-span/19whitney-span-articleLarge.jpg", "@MedillSchool", "@zlwise", "the-flux.com")
+		
+		title The Flux - Story
+
+		// CSS
+		link(rel='stylesheet', href='../../css/theflux.css?v10')
+		link(rel='stylesheet', href='css/story.css')
+		// HTML5 shim, for IE6-8 support of HTML elements
+		//if lt IE 9
+			script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+			script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+		
+		// Icon
+		link(rel='shortcut icon', href='../../img/ico/favicon.png')
+		link(rel='apple-touch-icon-precomposed', href='../../img/ico/favicon.png')
+		link(rel='apple-touch-icon-precomposed', href='../../img/ico/apple-touch-icon-144.png', sizes="144x144")
+
+	body(data-spy='scroll',data-target='.subnav',data-offset='80')
+		
+		// NAVBAR
+		+navbar(true)
+
+		// STORY COVER
+		section#story-cover.story-cover
+			div.story-cover-image(style="background-image: url('img/example.jpg');")
+			div.story-cover-arrow
+			div.story-cover-content
+				h1 Awesome Story Title Goes Here
+				p.lead Deck or lead/lede will go here. It can be a sentence or two but shouldn't go over that
+				p.byline by John Doe
+				p.byline Photographs by Jane Doe
+
+		section.story-cover-caption
+			div.credit
+				| Zach Wise
+			div.caption
+				| Senior Jacqueline Martinez and her boyfriend share a bus ride on her second to last day of high school. The two are expecting their first child this November.
+			
+
+		// ARTICLE
+		article.lazyload
+
+			section.container-fluid
+				div.row
+					div.col-md-1
+					div.col-md-10
+						p.lead
+							| Paragraph text with lead class. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat.
+				div.row
+					div.col-md-3
+					div.col-md-6
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+						p Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.
+
+
+			section.container-fluid
+				div.row
+					div.col-md-3
+					div.col-md-6
+						h2 The Profiles
+						p Some words about the people can go here.
+
+			// PROFILE NAVIGATION
+			nav.profile-nav
+				div.navbar.navbar-default
+					div.container-fluid
+						div.row
+							// Profile Button
+							div.profile-item
+								a.profile-button(href="#profile_01")
+									div.profile-button-background(style="background-image: url(img/talking_head_02.jpg);")
+									div.profile-button-container
+										div.profile-button-content
+											h2 The Comedian
+											h3 John Doe
+											p Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque.
+
+							// Profile Button
+							div.profile-item
+								a.profile-button(href="#profile_02")
+									div.profile-button-background(style="background-image: url(img/talking_head_01.jpg);")
+									div.profile-button-container
+										div.profile-button-content
+											h2 The Politician
+											h3 John Doe
+											p Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque.
+
+							// Profile Button
+							div.profile-item
+								a.profile-button(href="#profile_03")
+									div.profile-button-background(style="background-image: url(img/talking_head_02.jpg);")
+									div.profile-button-container
+										div.profile-button-content
+											h2 The Activist
+											h3 John Doe
+											p Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque.
+
+							// Profile Button
+							div.profile-item
+								a.profile-button(href="#profile_04")
+									div.profile-button-background(style="background-image: url(img/talking_head_01.jpg);")
+									div.profile-button-container
+										div.profile-button-content
+											h2 The Priest
+											h3 John Doe
+											p Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque.
+						
+							// Profile Button
+							div.profile-item
+								a.profile-button(href="#profile_05")
+									div.profile-button-background(style="background-image: url(img/talking_head_02.jpg);")
+									div.profile-button-container
+										div.profile-button-content
+											h2 The Champion
+											h3 John Doe
+											p Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque.
+								
+							// Profile Button
+							div.profile-item
+								a.profile-button(href="#profile_06")
+									div.profile-button-background(style="background-image: url(img/talking_head_01.jpg);")
+									div.profile-button-container
+										div.profile-button-content
+											h2 The Long Titled Moniker
+											h3 John Doe
+											p Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque.
+			// Profile
+			hr
+			section.profile.container-fluid#profile_01
+				div.row
+					div.col-md-1
+					div.col-md-10
+						h2 The Comedian
+						h3 John Doe
+						p.lead
+							| Paragraph text with lead class. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat.		
+				div.row
+					div.col-md-3
+					div.col-md-6
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+						p Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.
+						div.row
+							div.col-md-6
+								blockquote
+									p We strongly agree that messages that have been out there have been overblown.
+									cite John Doe
+							div.col-md-6
+								figure
+									img.img-responsive(src="../../img/transparent.gif", data-src="img/example_02.jpg")
+									figcaption At school, everyone knows Jacqueline as the one who takes the lead. "There need to be more outstanding leaders like her," says Diamond Montana, her biology teacher.
+
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+						p Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.
+
+			// Profile
+			hr
+			section.profile.container-fluid#profile_02
+				div.row
+					div.col-md-1
+					div.col-md-10
+						h2 The Politician
+						h3 John Doe
+						p.lead
+							| Paragraph text with lead class. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat.		
+				div.row
+					div.col-md-3
+					div.col-md-6
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+						p Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.
+						div.row
+							div.col-md-6
+								blockquote
+									p We strongly agree that messages that have been out there have been overblown.
+									cite John Doe
+							div.col-md-6
+								figure
+									img.img-responsive(src="../../img/transparent.gif", data-src="img/example_02.jpg")
+									figcaption At school, everyone knows Jacqueline as the one who takes the lead. "There need to be more outstanding leaders like her," says Diamond Montana, her biology teacher.
+
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+						p Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.
+
+			// Profile
+			hr
+			section.profile.container-fluid#profile_03
+				div.row
+					div.col-md-1
+					div.col-md-10
+						h2 The Activist
+						h3 John Doe
+						p.lead
+							| Paragraph text with lead class. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat.		
+				div.row
+					div.col-md-3
+					div.col-md-6
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+						p Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.
+						div.row
+							div.col-md-6
+								blockquote
+									p We strongly agree that messages that have been out there have been overblown.
+									cite John Doe
+							div.col-md-6
+								figure
+									img.img-responsive(src="../../img/transparent.gif", data-src="img/example_02.jpg")
+									figcaption At school, everyone knows Jacqueline as the one who takes the lead. "There need to be more outstanding leaders like her," says Diamond Montana, her biology teacher.
+
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+						p Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.
+
+			// Profile
+			hr
+			section.profile.container-fluid#profile_04
+				div.row
+					div.col-md-1
+					div.col-md-10
+						h2 The Priest
+						h3 John Doe
+						p.lead
+							| Paragraph text with lead class. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat.		
+				div.row
+					div.col-md-3
+					div.col-md-6
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+						p Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.
+						div.row
+							div.col-md-6
+								blockquote
+									p We strongly agree that messages that have been out there have been overblown.
+									cite John Doe
+							div.col-md-6
+								figure
+									img.img-responsive(src="../../img/transparent.gif", data-src="img/example_02.jpg")
+									figcaption At school, everyone knows Jacqueline as the one who takes the lead. "There need to be more outstanding leaders like her," says Diamond Montana, her biology teacher.
+
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+						p Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.
+
+
+			// Profile
+			hr
+			section.profile.container-fluid#profile_05
+				div.row
+					div.col-md-1
+					div.col-md-10
+						h2 The Champion
+						h3 John Doe
+						p.lead
+							| Paragraph text with lead class. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat.		
+				div.row
+					div.col-md-3
+					div.col-md-6
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+						p Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.
+						div.row
+							div.col-md-6
+								blockquote
+									p We strongly agree that messages that have been out there have been overblown.
+									cite John Doe
+							div.col-md-6
+								figure
+									img.img-responsive(src="../../img/transparent.gif", data-src="img/example_02.jpg")
+									figcaption At school, everyone knows Jacqueline as the one who takes the lead. "There need to be more outstanding leaders like her," says Diamond Montana, her biology teacher.
+
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+						p Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.
+
+			// Profile
+			hr
+			section.profile.container-fluid#profile_06
+				div.row
+					div.col-md-1
+					div.col-md-10
+						h2 The Long Titled Moniker
+						h3 John Doe
+						p.lead
+							| Paragraph text with lead class. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat.		
+				div.row
+					div.col-md-3
+					div.col-md-6
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+						p Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.
+						div.row
+							div.col-md-6
+								blockquote
+									p We strongly agree that messages that have been out there have been overblown.
+									cite John Doe
+							div.col-md-6
+								figure
+									img.img-responsive(src="../../img/transparent.gif", data-src="img/example_02.jpg")
+									figcaption At school, everyone knows Jacqueline as the one who takes the lead. "There need to be more outstanding leaders like her," says Diamond Montana, her biology teacher.
+
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+						p Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.
+
+
+			section.container-fluid
+				div.row
+					div.col-md-6
+						figure
+							img.img-responsive(src="../../img/transparent.gif", data-src="img/example_01.jpg")
+							figcaption Jacqueline and her mom walk through the neighborhood to run errands before their days begin. Her mom used to work for a profitable line of currency exchanges, but recently switched to a more stable finance job downtown.
+					
+					div.col-md-6
+						figure
+							img.img-responsive(src="../../img/transparent.gif", data-src="img/example_02.jpg")
+							figcaption At school, everyone knows Jacqueline as the one who takes the lead. "There need to be more outstanding leaders like her," says Diamond Montana, her biology teacher.
+
+
+				div.row
+					div.col-md-1
+					div.col-md-10
+						p.lead
+							| Paragraph text with lead class. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat.
+				div.row
+					div.col-md-3
+					div.col-md-6
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+						p Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.
+						div.row
+							div.col-md-6
+								blockquote
+									p We strongly agree that messages that have been out there have been overblown.
+									cite John Doe
+							div.col-md-6
+								figure
+									img.img-responsive(src="../../img/transparent.gif", data-src="img/example_02.jpg")
+									figcaption At school, everyone knows Jacqueline as the one who takes the lead. "There need to be more outstanding leaders like her," says Diamond Montana, her biology teacher.
+
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+						p Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula.
+
+
+			section.container-fluid
+				div.row
+					div.col-md-1
+					div.col-md-10
+						p.lead
+							| Paragraph text with lead class. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat.		
+				div.row
+					div.col-md-3
+					div.col-md-6
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+
+						p Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula. Nunc molestie, nisl sit amet cursus convallis, sapien lectus pretium metus, vitae pretium enim wisi id lectus. Donec vestibulum. Etiam vel nibh. Nulla facilisi. Mauris pharetra. Donec augue. Fusce ultrices, neque id dignissim ultrices, tellus mauris dictum elit, vel lacinia enim metus eu nunc.
+
+						p Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Ut vitae enim eu est vehicula gravida. Morbi ipsum ipsum, porta nec, tempor id, auctor vitae, purus. Pellentesque neque. Nulla luctus erat vitae libero. Integer nec enim. Phasellus aliquam enim et tortor. Quisque aliquet, quam elementum condimentum feugiat, tellus odio consectetuer wisi, vel nonummy sem neque in elit. Curabitur eleifend wisi iaculis ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non velit non ligula laoreet ultrices.
+				div.row
+					div.col-md-1
+					div.col-md-10
+						figure
+							img.img-responsive(src="../../img/transparent.gif", data-src="img/example_01.jpg")
+							figcaption Jacqueline and her mom walk through the neighborhood to run errands before their days begin. Her mom used to work for a profitable line of currency exchanges, but recently switched to a more stable finance job downtown.
+			
+				div.row
+					div.col-md-1
+					div.col-md-10
+						blockquote
+							p We strongly agree that messages that have been out there have been overblown.
+							cite John Doe
+
+			section.container-fluid
+				div.row
+					div.col-md-3
+					div.col-md-6
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+
+						p Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula. Nunc molestie, nisl sit amet cursus convallis, sapien lectus pretium metus, vitae pretium enim wisi id lectus. Donec vestibulum. Etiam vel nibh. Nulla facilisi. Mauris pharetra. Donec augue. Fusce ultrices, neque id dignissim ultrices, tellus mauris dictum elit, vel lacinia enim metus eu nunc.
+
+						p Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Ut vitae enim eu est vehicula gravida. Morbi ipsum ipsum, porta nec, tempor id, auctor vitae, purus. Pellentesque neque. Nulla luctus erat vitae libero. Integer nec enim. Phasellus aliquam enim et tortor. Quisque aliquet, quam elementum condimentum feugiat, tellus odio consectetuer wisi, vel nonummy sem neque in elit. Curabitur eleifend wisi iaculis ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non velit non ligula laoreet ultrices.
+				div.row
+					div.col-md-3
+					
+					div.col-md-5
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.
+					div.col-md-3
+						blockquote
+							p We strongly agree that messages that have been out there have been overblown.
+							cite John Doe
+		
+		// Footer
+		footer
+			div#footer-storybar.storybar(role="navigation")
+				div.row
+			div.container
+				p(style="text-align:center;") 
+					| &copy; 2015 Northwestern University Medill School of Journalism
+
+		// JavaScript
+		script(type='text/javascript').
+			var path = "../../";
+		script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+		script(type='text/javascript', src='../../js/theflux.js?v10')
+		script(type='text/javascript', src='js/story.js')
