@@ -27,6 +27,9 @@
 	// @codekit-prepend "Library/jquery.waypoints.js";
 	// @codekit-prepend "Library/jquery.fluidbox.js"; 
 	// @codekit-prepend "Library/jquery.laziestloader.js";
+	
+// OTHER LIBRARIES
+	// @codekit-prepend "Library/svg-morpheus.js";
 
 
 
@@ -39,7 +42,8 @@ $(document).ready(function(){
 		_story_cover_height = 100,
 		_path = "",
 		_is_index = false,
-		profile_array = [];
+		profile_array = [],
+		logo_timer = {};
 		
 		
 	if (typeof path != "undefined") {
@@ -562,12 +566,126 @@ $(document).ready(function(){
 		offset: -180
 	});
 	
+	/*	LOGO SVG MORPH
+ 	================================================== */
+	var logo_second = true;
+	var minTime = 500;
+	var maxTime = 3000;
+	var logoF = new SVGMorpheus('#fluxLogoF'),
+		logoL = new SVGMorpheus('#fluxLogoL'),
+		logoU = new SVGMorpheus('#fluxLogoU'),
+		logoX = new SVGMorpheus('#fluxLogoX'),
+		logoTimerF = {},
+		logoTimerL = {},
+		logoTimerU = {},
+		logoTimerX = {};
+	
+	function morphLogo() {
+		var logo_id = "1";
+		if (logo_second) {
+			logo_second = false;
+			logo_id = "2";
+		} else {
+			logo_second = true;
+			trace("true")
+		}
+		trace(logo_id)
+		//fluxLogo = new SVGMorpheus('#flux-logo');
+		// quad-in-out
+		// 750
+		logoF.to("f"+logo_id, {duration: 200, easing: "quad-in-out", rotation:"none"}, function(){
+			trace("do it")
+			clearTimeout(logo_timer);
+			logo_timer = setTimeout(morphLogo, 2000);
+		});
+	}
+	
+	function morphLogoF() {
+		var logo_id = "1";
+		var randomTimeout = randomBetween(minTime, maxTime);
+		if (logo_second) {
+			logo_second = false;
+			logo_id = "2";
+		} else {
+			logo_second = true;
+			trace("true")
+		}
+		
+		logoF.to("f"+logo_id, {duration: 1750, easing: "quad-in-out", rotation:"none"}, function(){
+			trace("F")
+			clearTimeout(logoTimerF);
+			
+			logoTimerF = setTimeout(morphLogoF, randomTimeout);
+		});
+	}
+	
+	function morphLogoL() {
+		var logo_id = "1";
+		var randomTimeout = randomBetween(minTime, maxTime);
+		if (logo_second) {
+			logo_second = false;
+			logo_id = "2";
+		} else {
+			logo_second = true;
+			trace("L")
+		}
+		
+		logoL.to("l"+logo_id, {duration: 1750, easing: "quad-in-out", rotation:"none"}, function(){
+			trace("doit")
+			clearTimeout(logoTimerL);
+			logoTimerL = setTimeout(morphLogoL, randomTimeout);
+		});
+	}
+	
+	function morphLogoU() {
+		var logo_id = "1";
+		var randomTimeout = randomBetween(minTime, maxTime);
+		if (logo_second) {
+			logo_second = false;
+			logo_id = "2";
+		} else {
+			logo_second = true;
+			trace("true")
+		}
+		
+		logoU.to("u"+logo_id, {duration: 1750, easing: "quad-in-out", rotation:"none"}, function(){
+			trace("U")
+			clearTimeout(logoTimerU);
+			logoTimerU = setTimeout(morphLogoU, randomTimeout);
+		});
+	}
+	
+	function morphLogoX() {
+		var logo_id = "1";
+		var randomTimeout = randomBetween(minTime, maxTime);
+		if (logo_second) {
+			logo_second = false;
+			logo_id = "2";
+		} else {
+			logo_second = true;
+			trace("true")
+		}
+		
+		logoX.to("x"+logo_id, {duration: 1750, easing: "quad-in-out", rotation:"none"}, function(){
+			trace("X")
+			clearTimeout(logoTimerX);
+			logoTimerX = setTimeout(morphLogoX, randomTimeout);
+		});
+	}
+	
+	
 	/*	Init
  	================================================== */
 	loadStoryBarStories(_path + "stories.json", "#navbar-story");
 	loadStoryBarStories(_path + "stories.json", "#footer-storybar");
 	makeImagesZoomable();
 	profileNavLayout();
+	//morphLogo();
+	//logo_timer = setTimeout(morphLogo, 1000);
+	logoTimerF = setTimeout(morphLogoF, 1000);
+	logoTimerL = setTimeout(morphLogoL, 1000);
+	logoTimerU = setTimeout(morphLogoU, 1000);
+	logoTimerX = setTimeout(morphLogoX, 1000);
 	
 });
 
@@ -590,6 +708,12 @@ createEl = function(tagName, className) {
 	el.className = className;
 	return el;
 } ;
+
+/* Random Number between 
+================================================== */
+randomBetween = function(min, max) {
+	return Math.floor(Math.random() * (max - min + 1) + min);
+};
 
 /* Google Analytics
 ================================================== */

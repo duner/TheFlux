@@ -99,6 +99,17 @@
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
+	"\/source\/jade\/logo_demo.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/logo_demo.jade",
+		"outputAbbreviatedPath": "\/compiled\/logo_demo.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0
+		},
 	"\/source\/jade\/stories\/profile_example.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -385,6 +396,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/source\/js\/Library\/svg-morpheus.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/js\/Library\/svg-morpheus.js",
+		"outputAbbreviatedPath": "\/source\/js\/Library\/min\/svg-morpheus-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/source\/js\/theflux.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -393,7 +415,7 @@
 		"outputAbbreviatedPath": "\/compiled\/js\/theflux.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 1,
+		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
 	"\/source\/less\/bootstrap\/alerts.less": {
@@ -2026,6 +2048,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/less\/custom\/icons.less",
 		"outputAbbreviatedPath": "\/source\/less\/css\/icons.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/source\/less\/custom\/logo.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/less\/custom\/logo.less",
+		"outputAbbreviatedPath": "\/source\/less\/css\/logo.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
