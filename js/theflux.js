@@ -6053,15 +6053,25 @@ $(document).ready(function(){
 	var logo_second = true;
 	var minTime = 500;
 	var maxTime = 1500;
-	var logoF = new SVGMorpheus('#fluxLogoF'),
-		logoL = new SVGMorpheus('#fluxLogoL'),
-		logoU = new SVGMorpheus('#fluxLogoU'),
-		logoX = new SVGMorpheus('#fluxLogoX'),
+	var logoF = {},
+		logoL = {},
+		logoU = {},
+		logoX = {},
 		logoTimerF = {},
 		logoTimerL = {},
 		logoTimerU = {},
 		logoTimerX = {};
 	
+	function initLogo() {
+		logoF = new SVGMorpheus('#fluxLogoF');
+		logoL = new SVGMorpheus('#fluxLogoL');
+		logoU = new SVGMorpheus('#fluxLogoU');
+		logoX = new SVGMorpheus('#fluxLogoX');
+		logoTimerF = setTimeout(morphLogoF, 1000);
+		logoTimerL = setTimeout(morphLogoL, 1000);
+		logoTimerU = setTimeout(morphLogoU, 1000);
+		logoTimerX = setTimeout(morphLogoX, 1000);
+	}
 	
 	function morphLogoF() {
 		var logo_id = "1";
@@ -6135,11 +6145,10 @@ $(document).ready(function(){
 	makeImagesZoomable();
 	profileNavLayout();
 
-	// LOGO
-	logoTimerF = setTimeout(morphLogoF, 1000);
-	logoTimerL = setTimeout(morphLogoL, 1000);
-	logoTimerU = setTimeout(morphLogoU, 1000);
-	logoTimerX = setTimeout(morphLogoX, 1000);
+	if (typeof show_logo != "undefined" && show_logo) {
+		initLogo();
+	}
+	
 	
 });
 
