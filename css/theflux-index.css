@@ -21,12 +21,37 @@ html {
   font-size: 90px;
   line-height: 90px;
 }
+.title-panel .main-story-panel {
+  position: relative;
+  margin-top: 20px;
+}
+.title-panel .main-story-panel span {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  line-height: 24px;
+  font-weight: 900;
+  letter-spacing: 25px;
+  text-transform: uppercase;
+  color: #CCC;
+}
+.title-panel #flux-logo-container {
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  padding-top: 0;
+  top: 5px;
+}
+.title-panel #flux-logo-container svg {
+  width: 100%;
+  max-height: 150px;
+  left: 10px;
+}
 .title-panel .title-sub {
   display: inline-block;
-  border-top: 1px solid #999;
+  color: #CCC;
   padding-top: 10px;
   margin-bottom: 25px;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 .title-panel h2 {
   font-weight: 100;
@@ -40,24 +65,22 @@ html {
 .panels [class*="col-"] {
   padding: 0;
 }
-.panels #story1 {
-  background-image: url('../img/teaser/story1.jpg');
+.panels #finding_closure {
+  background-image: url('../img/teaser/finding_closure.jpg');
 }
-.panels #story2 {
-  background-image: url('../img/teaser/story2.jpg');
+.panels #evolution_of_labor {
+  background-image: url('../img/teaser/evolution_of_labor.png');
+  background-position: center bottom;
 }
-.panels #story3 {
-  background-image: url('../img/teaser/story3.jpg');
+.panels #poz_perception {
+  background-image: url('../img/teaser/poz_perception.png');
+  background-position: center bottom;
 }
-.panels #story4 {
-  background-image: url('../img/teaser/story4.jpg');
+.panels #stacked_potential {
+  background-image: url('../img/teaser/stacked_potential.jpg');
 }
-.panels #story5 {
-  background-image: url('../img/teaser/story5.jpg');
-}
-.panels #story6 {
-  background-image: url('../img/teaser/story6.jpg');
-  background-position: center;
+.panels #new_lost_tribe {
+  background-image: url('../img/teaser/new_lost_tribe.jpg');
 }
 .story-panel {
   background-image: url('http://farm9.staticflickr.com/8501/8316081118_da9eb027f8_o.jpg');
@@ -90,8 +113,8 @@ html {
   color: #FFF;
   font-weight: 300;
   display: none;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 22px;
+  line-height: 24px;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .story-panel a:hover {
