@@ -69,7 +69,8 @@ html {
   background-image: url('../img/teaser/finding_closure.jpg');
 }
 .panels #evolution_of_labor {
-  background-image: url('../img/teaser/evolution_of_labor.jpg');
+  background-image: url('../img/teaser/evolution_of_labor.png');
+  background-position: center bottom;
 }
 .panels #poz_perception {
   background-image: url('../img/teaser/poz_perception.png');
