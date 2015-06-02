@@ -53,7 +53,13 @@ blockquote {
 .container-fluid {
 	display: inline-block;
 }
-
+.profile-nav {
+	
+}
+.profile-nav.profile-nav-sticky{
+	
+	display:none;
+}
 .profile-button-content {
 	color:white;
 	padding-left: 30px;
