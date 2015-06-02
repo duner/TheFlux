@@ -2,6 +2,7 @@
 Implements [BootstrapStarterKit](https://github.com/Medill/BootstrapStarterKit)
 ## See it
 * [See it in action here](http://medill.github.io/TheFlux/)
+* [Profile Navigation Example](http://medill.github.io/TheFlux/stories/story_template/profile_example.html)
 * [Typography Specimen Sheet](http://medill.github.io/TheFlux/typography.html)
 * [Typography Options 1](http://medill.github.io/TheFlux/typography_option_01.html)
 * [Typography Options 1](http://medill.github.io/TheFlux/typography_option_02.html)

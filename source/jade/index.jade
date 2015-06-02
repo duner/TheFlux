@@ -34,22 +34,25 @@ html(lang="en")
 					div.col-md-8.col-md-offset-2
 						div.title-panel
 							div.main-story-panel
-								h1 The Flux
+								h1(style="display:none") The Flux
+								span The
+								div#flux-logo-container
+									include includes/logo.svg
 							span.title-sub
 								h2 Stories on Transition
-							p TK What do our identities cost us? That's the question six teams of graduate journalism students asked as they tackled six different cultures and six different economies. The result: Six interactive articles that explore what we pay in money, time, energy, and missed opportunities for every choice we make. 
+							p The only constant in life is change. Five teams of graduate journalism students dove into to this concept, exploring how and why transitions take shape across Chicago and the country. What they found was developed into five interactive stories on how labor, culture, sex, housing and drugs are and reshaping identities and bringing communities in to and out of stages of life. 
 							div.social
 								a(href="interactive.html")
 									span.icon-twitter
 				div.col-md-4.col-sm-4.col-xs-4
-					div.story-panel#story1
+					div.story-panel#new_lost_tribe
 						a(href="stories/new_lost_tribe/index.html")
 							div.story-item
 								div.story-item-container
 									h2 The New Lost Tribe
 									p Chicago’s (surprisingly large) American Indian population is tired of feeling invisible.
 				div.col-md-4.col-sm-4.col-xs-4
-					div.story-panel#story2
+					div.story-panel#stacked_potential
 						a(href="stories/stacked_potential/index.html")
 							div.story-item
 								div.story-item-container
@@ -57,21 +60,21 @@ html(lang="en")
 									p Vendors of nootropics promise that the drugs will sharpen your mind and unlock your true cognitive potential. And though few studies have demonstrated the drugs’ efficacy, believers from Reddit and beyond are singing their praises. Are the drugs truly a safe smart drug, or nothing more than snake oil?
 			div.row.panels
 				div.col-md-4.col-sm-4.col-xs-4
-					div.story-panel#story3
+					div.story-panel#poz_perception
 						a(href="stories/poz_perception/index.html")
 							div.story-item
 								div.story-item-container
 									h2 The Poz Perception
-									p HIV infection rates in men has stagnated, but what it means to have and be aware of the disease has changed. Two characters from Chicago's most infected populations explain the role HIV plays in their lives and how it has transitioned in the gay male community.
+									p HIV rates are climbing, but the perception of the once life-ending disease has changed.
 				div.col-md-4.col-sm-4.col-xs-4
-					div.story-panel#story4
+					div.story-panel#evolution_of_labor
 						a(href="stories/evolution_of_labor/index.html")
 							div.story-item
 								div.story-item-container
 									h2 The Evolution of Labor
 									p The landscape for labor is changing. How will people react to Gov. Rauner's second attempt to change the Illinois labor laws?
 				div.col-md-4.col-sm-4.col-xs-4
-					div.story-panel#story5
+					div.story-panel#finding_closure
 						a(href="stories/finding_closure/index.html")
 							div.story-item
 								div.story-item-container
@@ -85,6 +88,8 @@ html(lang="en")
 					| &copy; 2015 Northwestern University Medill School of Journalism 
 
 		// JavaScript
+		script(type='text/javascript').
+			var show_logo = true;
 		script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
 		script(type='text/javascript', src='js/theflux.js?v10')
 		

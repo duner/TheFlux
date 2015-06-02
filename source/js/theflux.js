@@ -569,8 +569,9 @@ $(document).ready(function(){
 	/*	LOGO SVG MORPH
  	================================================== */
 	var logo_second = true;
-	var minTime = 500;
-	var maxTime = 1500;
+	var minTime = 750;
+	var maxTime = 1200;
+	var logoDuration = 1500;
 	var logoF = {},
 		logoL = {},
 		logoU = {},
@@ -601,7 +602,7 @@ $(document).ready(function(){
 			logo_second = true;
 		}
 		
-		logoF.to("f"+logo_id, {duration: 1750, easing: "quad-in-out", rotation:"none"}, function(){
+		logoF.to("f"+logo_id, {duration: logoDuration, easing: "quad-in-out", rotation:"none"}, function(){
 			clearTimeout(logoTimerF);
 			logoTimerF = setTimeout(morphLogoF, randomTimeout);
 		});
@@ -617,7 +618,7 @@ $(document).ready(function(){
 			logo_second = true;
 		}
 		
-		logoL.to("l"+logo_id, {duration: 1750, easing: "quad-in-out", rotation:"none"}, function(){
+		logoL.to("l"+logo_id, {duration: logoDuration, easing: "quad-in-out", rotation:"none"}, function(){
 			clearTimeout(logoTimerL);
 			logoTimerL = setTimeout(morphLogoL, randomTimeout);
 		});
@@ -633,7 +634,7 @@ $(document).ready(function(){
 			logo_second = true;
 		}
 		
-		logoU.to("u"+logo_id, {duration: 1750, easing: "quad-in-out", rotation:"none"}, function(){
+		logoU.to("u"+logo_id, {duration: logoDuration, easing: "quad-in-out", rotation:"none"}, function(){
 			clearTimeout(logoTimerU);
 			logoTimerU = setTimeout(morphLogoU, randomTimeout);
 		});
@@ -649,7 +650,7 @@ $(document).ready(function(){
 			logo_second = true;
 		}
 		
-		logoX.to("x"+logo_id, {duration: 1750, easing: "quad-in-out", rotation:"none"}, function(){
+		logoX.to("x"+logo_id, {duration: logoDuration, easing: "quad-in-out", rotation:"none"}, function(){
 			clearTimeout(logoTimerX);
 			logoTimerX = setTimeout(morphLogoX, randomTimeout);
 		});

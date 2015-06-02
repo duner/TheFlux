@@ -6760,6 +6760,11 @@ header.navigation #navbar-product.in-article #navbar-title,
 header.navigation #navbar-product.in-article .divider-vertical {
   display: block;
 }
+@media (max-width: 767px) {
+  header.navigation #navbar-product.in-article #navbar-title {
+    display: none;
+  }
+}
 header.navigation #navbar-product.in-article li a {
   color: #777777;
 }

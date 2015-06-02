@@ -8,17 +8,17 @@
 			"large": 	"true",
 			"main": 	"true",
 			"background": {			
-				"url": 	"img/teaser/story1.jpg"
+				"url": 	"img/teaser/flux.jpg"
 			}
 		},
 		{
 			"url": 		"stories/new_lost_tribe/index.html",
 			"headline": "The New Lost Tribe",
-			"deck": 	"Chicago’s (surprisingly large) American Indian population is tired of feeling invisible.",
+			"deck": 	"Chicago's American Indians are working to piece together a new native community",
 			"byline": 	"",
 			"large": 	"true",
 			"background": {			
-				"url": 	"img/teaser/story1.jpg"
+				"url": 	"img/teaser/new_lost_tribe.jpg"
 			}
 		},
 		{
@@ -28,17 +28,17 @@
 			"byline": 	"",
 			"large": 	"true",
 			"background": {			
-				"url": 	"img/teaser/story2.jpg"
+				"url": 	"img/teaser/stacked_potential.jpg"
 			}
 		},
 		{
 			"url": 		"stories/poz_perception/index.html",
 			"headline": "The Poz Perception",
-			"deck": 	"HIV infection rates in men has stagnated, but what it means to have and be aware of the disease has changed. Two characters from Chicago's most infected populations explain the role HIV plays in their lives and how it has transitioned in the gay male community.",
+			"deck": 	"HIV rates are climbing, but the perception of the once life-ending disease has changed.",
 			"byline": 	"",
 			"large": 	"true",
 			"background": {			
-				"url": 	"img/teaser/story3.jpg"
+				"url": 	"img/teaser/poz_perception.png"
 			}
 		},
 		{
@@ -48,7 +48,7 @@
 			"byline": 	"",
 			"large": 	"true",
 			"background": {			
-				"url": 	"img/teaser/story4.jpg"
+				"url": 	"img/teaser/evolution_of_labor.jpg"
 			}
 		},
 		{
@@ -58,7 +58,7 @@
 			"byline": 	"",
 			"large": 	"true",
 			"background": {			
-				"url": 	"img/teaser/story5.jpg"
+				"url": 	"img/teaser/finding_closure.jpg"
 			}
 		}
 	]
