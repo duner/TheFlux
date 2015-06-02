@@ -1,0 +1,3 @@
+.gif{
+	margin: auto;
+}
