@@ -1,0 +1,157 @@
+@media screen and (max-width: 640px) {
+	.definition {
+		width: 100%;
+		margin: 0 0 1em 0;
+		float: none;
+	}
+	#header-photo {
+		width: 100% !important;
+	}
+
+	.poz-nav-btn {
+		width: 6.7em !important;
+		height: 6.7em !important;
+	}
+}
+
+/* HEADER */
+
+.story-cover-content {
+	margin-bottom: 22em;
+}
+
+.story-cover-image {
+	min-width: 100%;
+	background-width: 100% !important;
+	background-height: auto;
+}
+
+/* TEXT */
+
+blockquote.lead {
+	font-size: 1.25em;
+	font-family: "Libre Baskerville";
+	font-weight: 700;
+	width: 140%;
+	margin-left: -20%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3em !important;
+}
+
+p {
+	color: black;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+em {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color: #868686;
+}
+
+/* DEFINITIONS */
+
+
+mark {
+	background-color: #caeaf7 !important;
+}
+
+.definition {
+	width: 40%;
+	border: 3px solid #87d0ee;
+	margin: 0 -50% 0 2em;
+	float: right;
+	display: none;
+}
+
+.definition p{
+	font-family: "Source Sans Pro", Helvetica, sans-serif !important;
+	color: #868686;
+	font-size: 0.9em;
+	font-weight: 300;
+	padding: 0.7em;
+	line-height: 1.5em;
+	margin: 0;
+}
+
+/* NAVIGATION */
+
+#johnR, #eddieG, #damonJ, #jimP, #hadeisS, #philC {
+	display: none;
+}
+
+.poz-nav.poz-nav-sticky [class*="col-"] {
+	padding: 0;
+}
+
+.poz-nav .navbar {
+	margin-bottom: 0px;
+}
+
+.poz-nav.poz-nav-sticky {
+	position: fixed;
+	top: 62px;
+	border-bottom: 1px solid #CCC;
+	z-index:99;
+}
+
+.poz-nav-btn {
+	width: 9.5em;
+	height: 9.5em;
+	display:inline-block;
+	margin: 0.25em;
+	opacity: 0.6;
+}
+
+.poz-nav-btn:hover {
+	opacity: 1;
+}
+
+.poz-nav-btn:active {
+	opacity: 0.6;
+}
+
+
+/* IMAGES */
+
+.lazyload {
+	opacity: 1 !important;
+}
+
+img.img-show {
+	opacity: 1 !important;
+}
+
+.showUp {
+	opacity: 1 !important;
+}
+
+#header-photo {
+	width: 58.75em;
+}
+
+/* END NAVIGATION */
+#end-nav-btn {
+	text-decoration: none !important;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color: #868686;
+	text-align: center;
+}
+
+/*
+@media screen and (max-width: 625px) {
+	.definition {
+		width: 35%;
+		border: 3px solid #9dd9f1;
+		margin: 0 -15% 0 2em;
+	}
+}
+*/
+
